@@ -13,16 +13,17 @@ interface ProjectCardProps {
   githubUrl?: string;
   demoUrl?: string;
   className?: string;
+  imageClassName?: string;
 }
 
-export function ProjectCard({ title, description, imageUrl, tags, githubUrl, demoUrl, className }: ProjectCardProps) {
+export function ProjectCard({ title, description, imageUrl, tags, githubUrl, demoUrl, className, imageClassName }: ProjectCardProps) {
   return (
     <div className={cn("group relative flex flex-col border-4 border-double border-[#1a1a1a] bg-[#f4ecd8] overflow-hidden transition-all duration-300 shadow-[4px_4px_0_0_#1a1a1a] hover:shadow-[6px_6px_0_0_#1a1a1a] hover:-translate-y-1", className)}>
       <div className="relative aspect-video w-full overflow-hidden border-b-2 border-[#1a1a1a] bg-[#eaddc5]">
         <img
           src={imageUrl}
           alt={title}
-          className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105 filter grayscale contrast-125 sepia-[.3]"
+          className={cn("object-cover w-full h-full transition-transform duration-500 group-hover:scale-105", imageClassName)}
         />
         <div className="absolute inset-0 bg-[#f4ecd8]/20 mix-blend-multiply transition-colors duration-300 pointer-events-none" />
       </div>
