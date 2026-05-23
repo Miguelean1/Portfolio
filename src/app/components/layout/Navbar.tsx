@@ -4,10 +4,10 @@ import { Menu, X } from 'lucide-react';
 import { cn } from '../../utils/cn';
 
 const navItems = [
-  { name: 'About', path: '/' },
-  { name: 'Experience', path: '/experience' },
-  { name: 'Projects', path: '/projects' },
-  { name: 'Skills', path: '/skills' },
+  { name: 'Sobre mi', path: '/' },
+  { name: 'Mi experiencia', path: '/experience' },
+  { name: 'Mis proyectos', path: '/projects' },
+  { name: 'Mis skills', path: '/skills' },
 ];
 
 export function Navbar() {

@@ -28,6 +28,12 @@ const EDUCATION_DATA = [
       'Control de versiones con Git'
     ]
   },
+  {
+    title: 'Grado en Filosofía',
+    organization: 'Universidad de Sevilla',
+    date: '2018 - 2022',
+    description: []
+  },
 ];
 
 export function Experience() {
