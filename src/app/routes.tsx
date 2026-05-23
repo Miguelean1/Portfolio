@@ -1,6 +1,6 @@
 import React from 'react';
 import { createBrowserRouter } from "react-router";
-import { MainLayout } from "./components/templates/MainLayout";
+import { MainLayout } from "./components/layout/MainLayout";
 import { Home } from "./pages/Home";
 import { Experience } from "./pages/Experience";
 import { Projects } from "./pages/Projects";

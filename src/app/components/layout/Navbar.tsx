@@ -22,7 +22,6 @@ export function Navbar() {
             Mike-dev
           </Link>
 
-          {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <Link
@@ -38,7 +37,6 @@ export function Navbar() {
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden text-[#1a1a1a] hover:text-[#555] focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
@@ -48,7 +46,6 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Nav */}
       {isOpen && (
         <div className="md:hidden border-t-2 border-[#1a1a1a] bg-[#f4ecd8] absolute top-16 left-0 w-full z-50">
           <div className="flex flex-col space-y-4 px-4 py-6 shadow-xl">
