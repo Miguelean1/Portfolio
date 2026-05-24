@@ -14,7 +14,7 @@ export function Typography({ className, variant = 'p', as, ...props }: Typograph
       className={cn(
         "font-['Playfair_Display',serif]",
         {
-          "scroll-m-20 text-4xl font-black tracking-tight lg:text-6xl text-[#1a1a1a] uppercase text-center border-y-4 border-double border-[#1a1a1a] py-6 my-6": variant === 'h1',
+          "scroll-m-20 text-3xl sm:text-4xl font-black tracking-tight lg:text-6xl text-[#1a1a1a] uppercase text-center border-y-4 border-double border-[#1a1a1a] py-4 sm:py-6 my-4 sm:my-6": variant === 'h1',
           "scroll-m-20 border-b-2 border-[#1a1a1a] pb-2 text-3xl font-bold tracking-tight first:mt-0 text-[#1a1a1a] uppercase": variant === 'h2',
           "scroll-m-20 text-2xl font-bold tracking-tight text-[#2b2b2b]": variant === 'h3',
           "scroll-m-20 text-xl font-bold tracking-tight text-[#1a1a1a]": variant === 'h4',

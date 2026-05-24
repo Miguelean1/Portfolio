@@ -9,7 +9,7 @@ export function MainLayout() {
       <div className="absolute inset-0 pointer-events-none opacity-50 mix-blend-multiply bg-[url('https://www.transparenttextures.com/patterns/old-wall.png')] z-0"></div>
       <div className="relative z-10 flex flex-col min-h-screen">
         <Navbar />
-        <main className="flex-grow w-full max-w-6xl mx-auto px-4 md:px-8 py-12 md:py-20 border-x-4 border-double border-[#1a1a1a]">
+        <main className="flex-grow w-full max-w-6xl mx-auto px-4 md:px-8 py-8 sm:py-12 md:py-20 border-x-4 border-double border-[#1a1a1a]">
           <Outlet />
         </main>
         <Footer />

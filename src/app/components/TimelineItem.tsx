@@ -25,7 +25,7 @@ export function TimelineItem({ title, organization, date, description, isLast = 
           {date}
         </div>
 
-        <div className="md:w-1/2 md:pl-12 pb-12">
+        <div className="md:w-1/2 md:pl-12 pb-8 md:pb-12">
           <Typography variant="h4" className="text-[#1a1a1a] mb-1 uppercase tracking-wider">{title}</Typography>
           <Typography variant="h4" as="h5" className="text-[#333] text-sm font-bold mb-4 font-['Playfair_Display'] italic">{organization}</Typography>
 

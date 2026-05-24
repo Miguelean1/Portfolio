@@ -41,16 +41,23 @@ export function ProjectCard({ title, description, imageUrl, tags, githubUrl, dem
         </div>
 
         <div className="flex items-center gap-3 mt-auto pt-4 border-t-2 border-[#1a1a1a]">
+          {!githubUrl && !demoUrl && (
+            <span className="text-xs font-bold uppercase tracking-widest text-[#555] font-['Playfair_Display'] italic">En desarrollo</span>
+          )}
           {githubUrl && (
-            <Button variant="outline" size="sm" className="flex-1 gap-2" onClick={() => window.open(githubUrl, '_blank')}>
-              <Github className="w-4 h-4" />
-              <span>Code</span>
+            <Button variant="outline" size="sm" asChild className="flex-1 gap-2">
+              <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+                <Github className="w-4 h-4" />
+                <span>Code</span>
+              </a>
             </Button>
           )}
           {demoUrl && (
-            <Button variant="primary" size="sm" className="flex-1 gap-2" onClick={() => window.open(demoUrl, '_blank')}>
-              <ExternalLink className="w-4 h-4" />
-              <span>Demo</span>
+            <Button variant="primary" size="sm" asChild className="flex-1 gap-2">
+              <a href={demoUrl} target="_blank" rel="noopener noreferrer">
+                <ExternalLink className="w-4 h-4" />
+                <span>Demo</span>
+              </a>
             </Button>
           )}
         </div>

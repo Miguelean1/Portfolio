@@ -32,7 +32,7 @@ export function Skills() {
         </Typography>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
         {SKILL_CATEGORIES.map((category) => (
           <div key={category.title} className="bg-[#eaddc5] p-8 border-4 border-double border-[#1a1a1a] shadow-[6px_6px_0_0_#1a1a1a] relative">
             <div className="absolute top-0 left-0 w-full h-1 bg-[#1a1a1a]" />

@@ -7,8 +7,8 @@ import { FileText, ArrowRight } from 'lucide-react';
 
 export function Home() {
   return (
-    <div className="flex flex-col gap-24">
-      <section className="flex flex-col-reverse md:flex-row items-center gap-12 pt-8">
+    <div className="flex flex-col gap-12 md:gap-24">
+      <section className="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12 pt-8">
         <div className="flex-1 space-y-6">
           <div>
             
@@ -28,7 +28,7 @@ export function Home() {
 
           </Typography>
 
-          <div className="flex items-center justify-center md:justify-start gap-6 pt-8 pb-8 border-b-2 border-[#1a1a1a] mb-8">
+          <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-8 pb-8 border-b-2 border-[#1a1a1a] mb-8">
             <Button asChild size="lg" className="gap-2">
               <Link to="/projects">
                 Proyectos <ArrowRight className="w-4 h-4" />
@@ -45,7 +45,7 @@ export function Home() {
           </div>
         </div>
 
-        <div className="w-64 h-64 md:w-80 md:h-80 relative flex-shrink-0 group mx-auto">
+        <div className="w-44 h-44 sm:w-64 sm:h-64 md:w-80 md:h-80 relative flex-shrink-0 group mx-auto">
           <div className="absolute inset-0 border-4 border-double border-[#1a1a1a] translate-x-4 translate-y-4 transition-transform duration-300 group-hover:translate-x-2 group-hover:translate-y-2 z-0 bg-[#eaddc5]" />
           <div className="absolute inset-0 bg-[#eaddc5] border-4 border-[#1a1a1a] z-10 overflow-hidden filter grayscale contrast-125 sepia-[.4] hover:sepia-0 transition-all duration-500">
             <img

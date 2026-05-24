@@ -12,6 +12,13 @@ const ALL_PROJECTS = [
     githubUrl: 'https://github.com/Miguelean1/Portfolio',
   },
   {
+    title: 'Dikë',
+    description: 'Red social de donaciones e intercambio. Plataforma que conecta personas para compartir intercambiar, y donar.',
+    imageUrl: 'https://res.cloudinary.com/dhhxrrgut/image/upload/v1779034345/logonoborder.png',
+    imageClassName: 'object-contain object-center',
+    tags: ['React', 'Node.js', 'Figma', 'MySQL'],
+  },
+  {
     title: 'Gaming Mashup',
     description: 'Aplicación que combina múltiples APIs externas del mundo gaming para mostrar información cruzada de juegos, personajes y rankings.',
     imageUrl: 'https://res.cloudinary.com/dhhxrrgut/image/upload/v1779549863/mashup_hxuynb.png',
